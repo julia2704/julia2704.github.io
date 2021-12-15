@@ -19,23 +19,17 @@ img{
 
 .header{
     position: sticky;
-    top: 0px;
-    left: 0px;
+    top: 0em;
+    left: 0em;
     z-index: 1;
-    height: 75px;
+    height: 3em;
     display: flex;
     align-items: center;
 }
 
 .wrapper{
-    width: 700px;
+    width: 60em;
     margin: 0 auto;
-}
-
-.wrapper2{
-    width: 100px;
-    margin: 0 auto;
-    align-items: flex-end;
 }
 
 .header .wrapper{
@@ -45,11 +39,10 @@ img{
 }
 
 .logo{
-    margin: 0 50px;
+    margin-top: 0.8em;
+    margin-left: 3em;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     list-style-type: none;
     position: absolute;
     color: blanchedalmond;
@@ -58,17 +51,18 @@ img{
 
 .logo a {
     display: block;
-    padding: 30px;
-    margin: 0 8px;
-    font-size: 23px;
+    padding: 1em;
+    margin: 0 0.8em;
+    font-size: 1.45em;
     color: rgb(224, 230, 209);
     text-decoration: none;
+    position: center;
 }
 
 .menu {
     margin: 0;
     padding: 0;
-    height: 85px;
+    height: 4.8em;
     list-style-type: none;
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -79,31 +73,31 @@ img{
 
 .menu a{
     display: block;
-    padding: 30px;
-    margin: 0 4px;
-    font-size: 22px;
+    padding: 1.3em;
+    margin: 0 1em;
+    font-size: 1.45em;
     color: rgb(224, 230, 209);
     text-decoration: none;
 }
 
 .menu a:hover{
-    color: rgb(39, 150, 202);
+    color: rgb(180, 83, 59);
+    transition: 0.4s;
 }
 
 .section {
     width: 100%;
-    min-height: 30vh;
-    padding: 56px 16px 16px 16px;
+    min-height: 20vh;
+    padding: 4em 1em 1em 1em;
 }
 
 .gallery{
     flex-wrap: wrap;
-    gap: 1px;
 }
 
 .gallery-row {
     display: flex;
-    gap: 3.5px;
+    gap: 0.3em;
 }
 
 .gallery-column {
@@ -118,12 +112,15 @@ img{
 }
 
 .gallery-item a:hover{
-   opacity: 45%; 
+   filter: grayscale(100%);
+   transition: 1s;
 }
 
 #about {
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background: url(/backgr.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #portfolio {
@@ -132,53 +129,38 @@ img{
 }
 
 #contacts{
-    height: 37vh;
+    height: 25vh;
     background-color: rgb(235, 236, 228);
 }
 
 #about .wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    width: 30em;
+    margin: 0 50em;
 }
 
 #about .section-title {
-    width: 100%;
+    text-align: left;
+    font-size: 2.7em;
     color: rgb(224, 230, 209);
 }
 
 #about .section-text {
-    font-size: 15px;
-    text-align: justify;
+    font-size: 1.6em;
+    text-align: left;
     color: rgb(224, 230, 209);
 }
-
-#about .section-image {
-    width: 100%;
-}
-
-#about .section-image, 
-#about .section-text {
-    width: 50%;
-}
-
-#about .section-image img {
-    width: 100%;
-    padding: 0 0 0 15px;
-  }
 
 #portfolio .section-title {
+    font-size: 1.4em;
+    text-align: center;
     width: 100%;
     color:rgb(224, 230, 209);
 }
 
 #portfolio .wrapper {
-    width: 1000px;
+    width: 60em;
     margin: 0 auto;
 } 
-
-#portfolio .img{
-    padding: 0 0 0 15px;
-}
 
 #contacts .section-title2 {
     width: 100%;
@@ -186,23 +168,11 @@ img{
 }
 
 #contacts .section-text2 {
-    font-size: 20px;
-    text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    color: black;
     text-align: center;
-}
-
-#contacts a:hover{
-    color: rgb(39, 150, 202);
-}
-
-#contacts a{
-    color: rgb(238, 139, 26);
-    text-decoration: none;
 }
 
 #contacts .wrapper {
